@@ -11,7 +11,8 @@ Your goal is to:
 - Evaluate what your system gets right and wrong
 - Reflect on how this mirrors real world AI recommenders
 
-Replace this paragraph with your own summary of what your version does.
+
+Real-world music recommenders like Spotify or Tiktok use techniques like Collaborative filtering and Content-based filtering to predict what type of songs a user will love to hear. To make a song prediction for a user, Collaborative filtering makes recommendations based on what similar users liked and Content-based filtering uses the song's own attributes. My version will prioritize features such as genre, mood, energy,  and acousticness. Both my Song and UserProfile objects will use these features.
 
 ---
 
