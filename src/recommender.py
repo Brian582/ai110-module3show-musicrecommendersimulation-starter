@@ -52,7 +52,6 @@ def load_songs(csv_path: str) -> List[Dict]:
     """
     import csv
     songs = []
-    print(f"Loading songs from {csv_path}...")
     with open(csv_path, newline="", encoding="utf-8") as f:
         reader = csv.DictReader(f)
         for row in reader:
