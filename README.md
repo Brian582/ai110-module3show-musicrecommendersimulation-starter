@@ -18,17 +18,9 @@ Real-world music recommenders like Spotify or Tiktok use techniques like Collabo
 
 ## How The System Works
 
-Explain your design in plain language.
+Each song in the catalog is described by attributes including genre, mood, energy, tempo, valence, danceability, and acousticness. The user creates a "taste" profile with four preferences: a favorite genre, a favorite mood, a target energy level, and whether they like acoustic tracks.
 
-Some prompts to answer:
-
-- What features does each `Song` use in your system
-  - For example: genre, mood, energy, tempo
-- What information does your `UserProfile` store
-- How does your `Recommender` compute a score for each song
-- How do you choose which songs to recommend
-
-You can include a simple diagram or bullet list if helpful.
+The system scores every song against that profile using three rules: +2.0 points for a genre match, +1.0 point for a mood match, and up to +1.0 point based on how close the song's energy is to the user's target. After every song is scored, they are sorted highest to lowest and the top 5 are returned as recommendations.
 
 ---
 
